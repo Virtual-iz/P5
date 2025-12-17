@@ -1,0 +1,32 @@
+header {
+    margin-top: 45px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 142.6%;
+            color: #000000;
+
+            .link {
+                text-decoration: none;
+                color: #000000;
+            }
+
+            .link-about {
+                margin-left: 57px;
+            }
+
+            .active {
+                text-decoration: underline;
+            }
+
+        }
+    }
+}
