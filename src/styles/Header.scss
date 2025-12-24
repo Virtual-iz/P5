@@ -1,8 +1,18 @@
 header {
-    margin-top: 45px;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    height : 163px; /*45 haut, 68 logo, 50 bas*/
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
 
     nav {
+        padding: 0 100px 0 100px;
+        width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
 
         .menu {

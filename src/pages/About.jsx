@@ -1,8 +1,11 @@
+import Banner from "../components/Banner"
+import banner2 from "../assets/banner2.png"
+
 const About = () => {
     return (
-     <main>
-        <h1>About Page</h1>
-    </main>
+        <main>
+            <Banner img={banner2} />
+        </main>
     )
 }
 

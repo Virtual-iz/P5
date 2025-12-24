@@ -4,8 +4,7 @@ import '../styles/Footer.scss'
 const Footer = () => {
     return (
         <footer>
-            
-            <img src={logoWhite} class="logo" alt="Logo en blanc" />
+            <img src={logoWhite} className="logo" alt="Logo en blanc" />
             <p>
             <span>@ 2020 Kasa.</span>
             <span>All rights reserved</span>

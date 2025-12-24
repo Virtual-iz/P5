@@ -1,10 +1,11 @@
 import '../styles/Thumb.scss'
 
-const Thumb = () => {
+const Thumb = ({ item }) => {
     return (
-        <div className="thumb"> 
-            <p>Titre de la location</p> 
-        </div>
+        <article className="thumb">
+            <img src={item.cover} />
+            <p>{item.title}</p>
+        </article>
     )
 }
 export default Thumb
