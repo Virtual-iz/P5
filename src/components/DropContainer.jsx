@@ -5,10 +5,22 @@ import Drop from "../components/Drop"
 const DropContainer = () => {
     return (
         <section className="drop-container">
-            <Drop>Fiabilité</Drop>
-            <Drop>Respect</Drop>
-            <Drop>Service</Drop>
-            <Drop>Sécurité</Drop>
+            <Drop 
+            title="Fiabilité" 
+            dropcontent="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.">
+            </Drop>
+            <Drop 
+            title="Respect" 
+            dropcontent="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.">
+            </Drop>
+            <Drop 
+            title="Service" 
+            dropcontent="La qualité du service est au cœur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance.">
+            </Drop>
+            <Drop 
+            title="Sécurité" 
+            dropcontent="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.">
+            </Drop>
         </section>
     )
 }
