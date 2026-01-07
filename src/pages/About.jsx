@@ -6,9 +6,7 @@ const About = () => {
     return (
         <main>
             <Banner img={banner2} />
-            <DropContainer>
-
-            </DropContainer>
+            <DropContainer></DropContainer>
         </main>
     )
 }

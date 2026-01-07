@@ -5,7 +5,7 @@ import data from "../datas/logements.json"
 const ThumbContainer = () => {
     return (
         <section className="thumb-container">
-            {data.map((item, index) => <Thumb item={item} />)}
+            {data.map((item, index) => <Thumb key={`${index}-thumb`} item={item} />)}
         </section>
     )
 }

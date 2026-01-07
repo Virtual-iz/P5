@@ -6,7 +6,7 @@ const ErrorPage = () => {
     <main>
         <article className='error'>
         <h1>404</h1>
-        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <h2>Oups! La page que vous demandez n'existe pas.</h2>
         <p><a href="#">Retourner à la page d'accueil</a></p>
         </article>
     </main>

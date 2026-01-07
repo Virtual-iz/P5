@@ -4,6 +4,7 @@ import About from '../pages/About'
 import ErrorPage from '../pages/ErrorPage'
 import Header from './Header'
 import Footer from './Footer'
+import Lodging from '../pages/Lodging'
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/lodging/:id" element={<Lodging />} />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
                 <Footer />
