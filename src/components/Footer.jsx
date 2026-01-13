@@ -5,9 +5,8 @@ const Footer = () => {
     return (
         <footer>
             <img src={logoWhite} className="logo" alt="Logo en blanc" />
-            <p>
-            <span>@ 2020 Kasa.</span>
-            <span>All rights reserved</span>
+            <p> @ 2020 Kasa.
+            All rights reserved 
             </p>
         </footer>
     )

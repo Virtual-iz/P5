@@ -2,10 +2,10 @@ import '../styles/Lodging.scss'
 import { useParams } from "react-router-dom"
 import data from "../datas/logements.json"
 import Drop from "../components/Drop"
-import Tag from "../components/Tag"
 import Carrousel from '../components/Carrousel'
 import TagContainer from '../components/TagsContainer'
 import Host from '../components/Host'
+import ErrorPage from './ErrorPage'
 
 const Lodging = () => {
 
@@ -16,41 +16,38 @@ const Lodging = () => {
         lodging = data.find(item => item.id === id)
     }
 
+    if (!lodging) {
+        return <ErrorPage />
+    }
+
     console.log(lodging)
 
     return (
         <main className="lodging">
 
-            <Carrousel>
-                {lodging.pictures}
-            </Carrousel>  
+            <Carrousel data={lodging} />
 
             <section>
                 <article>
                     <h2>{lodging.title}</h2>
                     <p>{lodging.location}</p>
-                    <TagContainer className='tags-container'>
-                        <Tag>{lodging.tags}</Tag>
-                        <Tag>{lodging.tags}</Tag>
-                        <Tag>{lodging.tags}</Tag>
-                    </TagContainer>
+                    <TagContainer className='tags-container' data={lodging.tags} />
                 </article>
-                <aside>
-                    <Host></Host>
-                    <div>{lodging.rating}</div>
-                </aside>
+                <article>     
+                    <Host data={lodging}></Host>
+                </article>
             </section>
 
             <section>
-                <article>
-                    <Drop 
-                        title="Description" 
+                <article >
+                    <Drop
+                        title="Description"
                         dropcontent={lodging.description}>
                     </Drop>
                 </article>
                 <article>
                     <Drop 
-                        title="Equipements" 
+                        title="Equipements"
                         dropcontent={lodging.equipments}>
                     </Drop>
                 </article>

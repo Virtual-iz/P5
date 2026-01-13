@@ -1,10 +1,17 @@
 .lodging{
     section{
         display: flex;
-        justify-content: space-between;
+        align-items: space-between;
+        justify-content: flex-start;
+        width: 100%;
         gap:76px;
-    }
-    article{
-        width: 50%;
-    }
+
+        article{
+            width: (50%);
+        }
+        h2{
+        margin: 0;
+        padding: 0;
+        }
+    }   
 }

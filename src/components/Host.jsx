@@ -1,19 +1,19 @@
 import '../styles/Host.scss'
-import data from "../datas/logements.json"
 
-const Host = ({}) => {
+const Host = ({ data }) => {
 
     return (
         <div className="host">
-            <p>
-                {data.map((item, index) => <Host key={`${index}-host`} item={lodging.host.name} />)}
-            </p>
-            <img src={lodging.host.picture}></img>
+            <div className="profil">
+                <p>{data.host.name}</p>
+                <img src={data.host.picture}></img>
+            </div>
+            <div className='rating'>{data.host.rating}</div> 
         </div>
+
     )
 }
 
 export default Host
 
 
-                    

@@ -1,9 +1,9 @@
 import '../styles/Tag.scss'
 
-const Tag = ({}) => {
+const Tag = ({ item }) => {
 
     return (
-        <div className="tag"></div>
+        <div className="tag">{item}</div>
     )
 }
 

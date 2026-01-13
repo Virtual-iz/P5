@@ -1,21 +1,33 @@
+* {
+    box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  padding-left: 100px;
-  padding-right: 100px;
-
-  @media screen and (max-width: 480px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
+  
   main {
-    margin-top: 163px;
-  }
-  main h2{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 163px; /*header fixe*/
+    height: auto;
+    
+    h2{
       color: #FF6060;
       font-weight: medium;
       font-size: 36px;
+    }
+
+    @media screen and (max-width: 680px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 93px;
+    }
   }
+
+
 }
