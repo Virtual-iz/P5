@@ -5,8 +5,20 @@
     position: relative;
     background: rgba(0,0,0,1);
     font-size: 18px;
-    color: #fff;
     font-weight: bold;
+    color: #fff;
+
+    /*point de rupture plus harmonieux à 560 qu'à 680*/
+    @media screen and (max-width: 560px) {
+        width: 100%;
+        height: auto;
+        /*H255 x W335 sur la maquette mais semble plus souple en auto? */
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
     p {
         position: absolute;
         left: 5.88%;
@@ -17,15 +29,9 @@
         height: 100%;
         border-radius: 10px;
         -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-        from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        from(rgba(0,0,0,1)), to(rgba(255, 255, 255, 0)));
     }
-
-    @media screen and (max-width: 680px) {
-    width: 100%;
-    height: auto;
-    }
-
-
+    
 }
 
 

@@ -16,35 +16,43 @@ header {
         @media screen and (max-width: 680px) {
         height: 46px;
         }
+        @media screen and (max-width: 320px) {
+        height: 25px;
+        }
     }
 
     nav {
-
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
         .menu {
             display: flex;
-            align-items: center;
+            gap: 57px;
+
             .link {
                 text-decoration: none;
                 color: #000000;
             }
-
-            .link-about {
-                margin-left: 57px;
-            }
-
             .active {
                 text-decoration: underline;
             }
+            @media screen and      (max-width: 680px) {
+                gap: 26px;
+            }
+            @media screen and      (max-width: 680px) {
+                gap: 14px;
+            }
         }
     }
+
     @media screen and (max-width: 680px) {
-    text-transform: uppercase;
-    padding: 20px 20px 27px 20px;
-    font-size: 12px;
+        text-transform: uppercase;
+        padding: 20px 20px 27px 20px;
+        font-size: 12px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 11px;
     }
 }

@@ -1,38 +1,74 @@
 .carrousel {
+    position: relative;
     width: 100%;
     height: 415px;
     border-radius: 25px;
-    margin-bottom: 50px;
+    overflow: hidden;
+    margin-top: 169px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 680px){
+        height: 255px;
+        margin-top: 96px;
+        margin-bottom: 15px;
+    }
+    @media screen and (max-width: 320px){
+        margin-top: 75px;
+    }
 
     img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
     }
 
     .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        top : 50%;
-        background-color: black;
-        width: 40px;
-        height: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 23.36px;
+        width: 46,68px;
+        height: auto;
+        background-color: transparent;
         cursor: pointer;
         user-select: none;
+        z-index: 2;
 
+        @media screen and (max-width: 680px){
+            padding: 5.84px;
+            width: 11.67px;
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.315);
+        }
         &.carrousel-arrow-left {
-            left: 5%;
+            left: 0;
         }
         &.carrousel-arrow-right {
-            right: 5%;
+            right: 0;
+        }
+        img {
+            object-fit: contain;
         }
     }
 
     .carrousel-index {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
         color: white;
-        font-size: 16px;
-        z-index: 1;
-        background-color: black;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: transparent;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        @media screen and (max-width: 680px){
+            display: none;
+        }
     }
-
 }

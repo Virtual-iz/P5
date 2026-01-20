@@ -1,17 +1,56 @@
 .lodging{
-    section{
+
+    margin-bottom: 50px;
+    @media screen and (max-width: 680px){
+        margin-bottom: 27px;
+    }
+
+    .lodging-header{
         display: flex;
-        align-items: space-between;
-        justify-content: flex-start;
+        flex: 2 1;
+        flex-direction: row;
         width: 100%;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        @media screen and (max-width: 680px){
+            flex-direction: column;
+
+        }
+
+        .lodging-info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            p{
+                margin: 0;
+                font-size: 18px;
+                @media screen and (max-width: 680px){
+                    font-size: 14px;
+                    margin: 5px 0 0 0;
+                }
+            }
+        }
+    }
+
+    .lodging-details{
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         gap:76px;
+        margin-top: 24px;
 
         article{
-            width: (50%);
+            width: 48%;
+            @media screen and (max-width: 680px){
+            width: 100%;
         }
-        h2{
-        margin: 0;
-        padding: 0;
+        }
+        @media screen and (max-width: 680px){
+            flex-direction: column;
+            gap : 20px;
+            margin-top: 0px;
         }
     }   
 }

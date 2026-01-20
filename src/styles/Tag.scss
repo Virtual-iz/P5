@@ -1,13 +1,22 @@
 .tag{
     display: flex;
+    min-width: 115px;
     justify-content: center;
     align-items: center;
-    width:115px;
     height: 25px;
     border-radius: 10px;
     background-color: #FF6060;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
+
+    @media screen and (max-width: 680px){
+        height: 18px;
+        font-size: 10px;
+    }
+    @media screen and (max-width: 280px) {
+        justify-content: center;
+        width: 80%;
+    }
 
 }

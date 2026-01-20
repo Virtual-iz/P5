@@ -4,10 +4,12 @@ import '../styles/Footer.scss'
 const Footer = () => {
     return (
         <footer>
-            <img src={logoWhite} className="logo" alt="Logo en blanc" />
-            <p> @ 2020 Kasa.
-            All rights reserved 
-            </p>
+            <div className='copyright'>
+                <img src={logoWhite} className="logo" alt="Logo en blanc" />
+                <p> @ 2020 Kasa.
+                All rights reserved 
+                </p>
+            </div>
         </footer>
     )
 }

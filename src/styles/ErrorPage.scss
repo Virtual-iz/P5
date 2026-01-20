@@ -1,17 +1,35 @@
 .error{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
+    margin: 139px 0 139px 0;
+    gap : 139px;
+    @media screen and (max-width: 680px) {
+        gap: 113px;
+        margin: 113px 0 113px 0;
+    }
+    @media screen and (max-width: 320px) {
+        gap: 30px;
+        margin: 80px 0 80px 0;
+    }
 
     h1{
         color: #FF6060;
         font-weight: bold;
         font-size: 288px;
+        @media screen and (max-width: 680px) {
+            font-size: 96px;
+        }
     }
+    /*h2 commun aux pages*/
     a{
         color: black;
         font-weight: medium;
         font-size: 18px;
+        @media screen and (max-width: 680px) {
+            font-size: 14px;
+        }
     }
 }

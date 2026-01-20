@@ -27,27 +27,27 @@ const Lodging = () => {
 
             <Carrousel data={lodging} />
 
-            <section>
-                <article>
-                    <h2>{lodging.title}</h2>
-                    <p>{lodging.location}</p>
+            <section className="lodging-header">
+                <article className="lodging-info">
+                    <div>
+                        <h2>{lodging.title}</h2>
+                        <p>{lodging.location}</p>
+                    </div>
                     <TagContainer className='tags-container' data={lodging.tags} />
                 </article>
-                <article>     
-                    <Host data={lodging}></Host>
-                </article>
+                <Host data={lodging}></Host>
             </section>
 
-            <section>
-                <article >
+            <section className="lodging-details">
+                <article>
                     <Drop
                         title="Description"
                         dropcontent={lodging.description}>
                     </Drop>
                 </article>
-                <article>
-                    <Drop 
-                        title="Equipements"
+                <article className="equipment-dropdown">
+                    <Drop
+                        title="Équipements"
                         dropcontent={lodging.equipments}>
                     </Drop>
                 </article>

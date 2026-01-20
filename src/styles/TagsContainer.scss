@@ -1,4 +1,14 @@
 .tags-container{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
     gap:10px;
+
+    @media screen and (max-width: 680px) {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    }
+    @media screen and (max-width: 280px) {
+        justify-content: center;
+    }
 }
