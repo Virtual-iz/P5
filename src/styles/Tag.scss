@@ -1,6 +1,6 @@
-.tag{
+.tag {
     display: flex;
-    min-width: 115px;
+    // min-width: 115px;
     justify-content: center;
     align-items: center;
     height: 25px;
@@ -9,11 +9,13 @@
     color: #fff;
     font-size: 14px;
     font-weight: bold;
+    padding: 0 22px 0 22px;
 
-    @media screen and (max-width: 680px){
+    @media screen and (max-width: 768px) {
         height: 18px;
         font-size: 10px;
     }
+
     @media screen and (max-width: 280px) {
         justify-content: center;
         width: 80%;

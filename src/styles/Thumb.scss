@@ -8,8 +8,8 @@
     font-weight: bold;
     color: #fff;
 
-    /*point de rupture plus harmonieux à 560 qu'à 680*/
-    @media screen and (max-width: 560px) {
+    /*point de rupture plus harmonieux à 560 qu'à 768*/
+    @media screen and (max-width: 768px) {
         width: 100%;
         height: auto;
         /*H255 x W335 sur la maquette mais semble plus souple en auto? */

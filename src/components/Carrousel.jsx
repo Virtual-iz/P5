@@ -21,7 +21,7 @@ const Carrousel = ({ data }) => {
         <div className="carrousel">
             <img
                 src={data.pictures[currentIndex]}
-                alt={`Vue ${currentIndex + 1} du logement`}
+                alt={`Vue image n°${currentIndex + 1} du logement`}
             />
 
             {showArrows && (
