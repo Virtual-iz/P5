@@ -1,7 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
 # Kasa — Application React
 
 Application web de location immobilière entre particuliers
@@ -21,7 +17,6 @@ L'objectif  : reproduire une maquette Figma en développant une **Single Page Ap
 | ESLint | 9.39 |
 
 ---
-
 ## Démarrage
 
 ```bash

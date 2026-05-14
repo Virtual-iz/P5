@@ -2,15 +2,16 @@ import '../styles/Drop.scss'
 import { useState } from 'react'
 import arrow from '../assets/drop-arrow-up.png';
 
-const Drop = ({ title, dropcontent }) => {
-    const [isOpen, setIsOpen] = useState(false)
 
+const Drop = ({ title, dropcontent }) => {
     return (
-        <details className="drop" onClick={() => setIsOpen(!isOpen)}>
+        <details className="drop">
             <summary className="drop-header">
                 <h2>{title}</h2>
-                <img src={arrow} alt="Toggle dropdown"
-                    className={`arrow ${isOpen ? 'open' : ''}`}
+                <img
+                    src={arrow}
+                    alt="Toggle dropdown"
+                    className="arrow"
                 />
             </summary>
             <div className="drop-content">
@@ -25,7 +26,8 @@ const Drop = ({ title, dropcontent }) => {
                 )}
             </div>
         </details>
-    )
-}
+    );
+};
 
 export default Drop
+
