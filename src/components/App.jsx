@@ -9,7 +9,7 @@ import Lodging from '../pages/Lodging'
 const App = () => {
     return (
         <>
-            <Router>
+            <Router basename="/P5">
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
